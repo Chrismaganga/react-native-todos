@@ -1,5 +1,6 @@
 {
   "expo": {
+    "main": "expo-router/entry",
     "name": "react-native-testing",
     "slug": "react-native-testing",
     "version": "1.0.0",
@@ -19,10 +20,15 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.maganga.reactnativetesting"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
